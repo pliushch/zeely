@@ -1,14 +1,24 @@
-import path from "path"
-import tailwindcss from "@tailwindcss/vite"
-import react from "@vitejs/plugin-react"
-import { defineConfig } from "vite"
+import path from 'path';
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import viteTsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from 'vite';
+import fs from 'fs';
 
-// https://vite.dev/config/
+const appDirectory = fs.realpathSync(process.cwd());
+const resolveApp = (relativePath: string) => path.resolve(appDirectory, relativePath);
+
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  base: '/zeely/',
+  plugins: [react(), tailwindcss(), viteTsconfigPaths()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': resolveApp('src'),
+      '@core': resolveApp('src/core'),
+      '@images': resolveApp('src/core/common/assets/images'),
+      '@ui': resolveApp('src/core/common/ui'),
+      '@utils': resolveApp('src/core/common/utils'),
+      '@user/*': resolveApp('src/core/user'),
     },
   },
-})
+});

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Italian Plate';
+  src: url("../fonts/italian-plate/Italian Plate No2 Expanded Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Italian Plate';
+  src: url("../fonts/italian-plate/Italian Plate No2 Expanded.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Italian Plate';
+  src: url("../fonts/italian-plate/Italian Plate No2 Expanded Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Italian Plate';
+  src: url("../fonts/italian-plate/Italian Plate No2 Expanded Demibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Italian Plate';
+  src: url("../fonts/italian-plate/Italian Plate No2 Expanded Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

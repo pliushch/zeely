@@ -1,13 +1,34 @@
 {
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json"},
-    { "path": "./tsconfig.node.json"}
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
   ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@images/*": [
+        "./src/core/common/assets/images/*"
+      ],
+      "@ui/*": [
+        "./src/core/common/ui/*"
+      ],
+      "@utils/*": [
+        "./src/core/common/utils/*"
+      ],
+      "@user/*": [
+        "./src/core/user/*"
+      ]
     }
   }
 }

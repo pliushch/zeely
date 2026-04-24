@@ -28,7 +28,12 @@ export const AvatarBackgroundGeneration = () => {
 
   const getLastValue = () => {};
 
+  if (1 > 0) {
+    return <div>123</div>
+  }
+
   return (
+    <div>
     <div>
     <div>
     <div>
@@ -69,6 +74,7 @@ export const AvatarBackgroundGeneration = () => {
         </div>
       </DrawerBody>
     </DrawerContent>
+    </div>
     </div>
     </div>
     </div>

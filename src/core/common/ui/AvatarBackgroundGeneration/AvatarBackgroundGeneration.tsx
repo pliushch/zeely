@@ -32,6 +32,10 @@ export const AvatarBackgroundGeneration = () => {
     return <div>1234562225</div>
   }
 
+  if (2< 3) {
+    return <div>111</div>
+  }
+
   return (
     <div>
     <div>

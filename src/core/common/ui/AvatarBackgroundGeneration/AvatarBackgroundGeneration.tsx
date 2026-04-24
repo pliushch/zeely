@@ -21,18 +21,22 @@ export const AvatarBackgroundGeneration = () => {
   };
 
   const handleChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setValue(e.target.value);
+    e.preventDefault();
   };
 
-  const getPreviousValue = () => {
-    setValue('lorem ipsum dolor sit amet');
-  };
+  const getPreviousValue = () => {};
 
-  const getLastValue = () => {
-    setValue('Lorem ipsum dolor sit amet, consectetur adipisicing elit');
-  };
+  const getLastValue = () => {};
+
+  if (1 > 0) {
+    return <div>123456222</div>
+  }
 
   return (
+    <div>
+    <div>
+    <div>
+    <div>
     <DrawerContent className="max-w-[400px]">
       <AvatarBackgroundGenerationHeader />
       <DrawerBody>
@@ -70,5 +74,9 @@ export const AvatarBackgroundGeneration = () => {
         </div>
       </DrawerBody>
     </DrawerContent>
+    </div>
+    </div>
+    </div>
+    </div>
   );
 };

@@ -24,13 +24,9 @@ export const AvatarBackgroundGeneration = () => {
     e.preventDefault();
   };
 
-  const getPreviousValue = () => {
-    setValue('lorem ipsum dolor sit amet');
-  };
+  const getPreviousValue = () => {};
 
-  const getLastValue = () => {
-    setValue('Lorem ipsum dolor sit amet, consectetur adipisicing elit');
-  };
+  const getLastValue = () => {};
 
   return (
     <DrawerContent className="max-w-[400px]">

@@ -33,7 +33,7 @@ export const AvatarBackgroundGeneration = () => {
   }
 
   if (2< 3) {
-    return <div>111</div>
+    return <div>11</div>
   }
 
   return (

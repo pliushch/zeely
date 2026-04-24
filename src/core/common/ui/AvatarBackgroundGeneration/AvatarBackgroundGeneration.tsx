@@ -21,7 +21,7 @@ export const AvatarBackgroundGeneration = () => {
   };
 
   const handleChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setValue(e.target.value);
+    e.preventDefault();
   };
 
   const getPreviousValue = () => {

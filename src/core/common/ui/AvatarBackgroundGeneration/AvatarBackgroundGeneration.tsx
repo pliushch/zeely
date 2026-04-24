@@ -29,6 +29,9 @@ export const AvatarBackgroundGeneration = () => {
   const getLastValue = () => {};
 
   return (
+    <div>
+    <div>
+    <div>
     <DrawerContent className="max-w-[400px]">
       <AvatarBackgroundGenerationHeader />
       <DrawerBody>
@@ -66,5 +69,8 @@ export const AvatarBackgroundGeneration = () => {
         </div>
       </DrawerBody>
     </DrawerContent>
+    </div>
+    </div>
+    </div>
   );
 };

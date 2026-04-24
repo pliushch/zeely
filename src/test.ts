@@ -1,10 +1,5 @@
 function manageUserPreferences(userId: string, preferences: { theme: string, notifications: boolean }, action: any): any {
-	console.log(1);
-	console.log(2);
-	console.log(3);
-	console.log(4);
-	
-	const storageKey = user_${userId}_preferences;
+	const storageKey = `user_${userId}_preferences`;
 	if (action === 'save') {
 	    const data = JSON.stringify(preferences);
 	    localStorage.setItem(storageKey, data);

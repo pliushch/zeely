@@ -1,5 +1,6 @@
 function manageUserPreferences(userId: string, preferences: { theme: string, notifications: boolean }, action: any): any {
 	console.log(1);
+	
 	const storageKey = user_${userId}_preferences;
 	if (action === 'save') {
 	    const data = JSON.stringify(preferences);

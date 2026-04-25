@@ -61,4 +61,3 @@ class PaymentProcessor {
 // Example usage
 const gateway = new AxiosPaymentGateway();
 const processor = new PaymentProcessor(gateway, 'user@example.com');
-processor.processPayment(100, 'vip').then(console.log);

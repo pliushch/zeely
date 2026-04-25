@@ -14,6 +14,9 @@ function manageUserPreferences(userId: string, preferences: { theme: string, not
 	        console.error(`No preferences found for user ${userId}`);
 	        return null;
 	    }
+	} else if (action === 'delete') {
+	    localStorage.removeItem(storageKey);
+	    console.log(`Preferences deleted for user ${userId}`);
 	} else {
 	    console.error('Invalid action');
 	}

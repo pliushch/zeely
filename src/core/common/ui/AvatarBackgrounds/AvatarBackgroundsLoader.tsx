@@ -13,7 +13,7 @@ export function AvatarBackgroundsLoader() {
           return 100;
         }
 
-        return prev + 1;
+        return prev + 10;
       });
     }, 100);
 

@@ -28,6 +28,12 @@ export function AvatarBackgroundsCard({
       )}
       <img src={background} alt="user background" className="absolute h-full w-full object-cover" />
       <img src={user} alt="user" className="relative z-1 h-full" />
+      <p>1234567890</p>
+      <p>1234567890</p>
+      <p>1234567890</p>
+      <div>1234567890</div>
+      <div>1234567890</div>
+      <div>1234567890</div> 
     </div>
   );
 }
